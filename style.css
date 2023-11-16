@@ -5,13 +5,21 @@
 }
 body
 {   display: flex;
-    justify-content: flex-end;
+    justify-content: space-evenly;
     background: rgb(56, 16, 16);
+}
+#header a{
+    font-weight: 1000;
+    font-size: 50px;
+    text-decoration: none;
+    padding-right: 500px;
+    color: aliceblue;
+    position: relative;
 }
 nav{
     display: flex;
     position: relative;
-    padding: 10px 0;
+    padding-right: 5px;
     background: rgb(107, 51, 32);
 }
 nav a
