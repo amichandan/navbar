@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animated active navbar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Profile</a>
+        <a href="#">Messages</a>
+        <a href="#">Setting</a>
+        <a href="#">Setting</a>
+        <div id="underline"></div>
+    </nav>
+    <script>
+        let underline = document.querySelector('#underline');
+        let item =document.querySelectorAll('nav a');
+
+        function indicator(e){
+            underline.style.left = e.offsetLeft+'px';
+            underline.style.width = e.offsetWidth+'px';
+        }
+        item.forEach(link => {
+            link.addEventListener('click', (e) => {
+                indicator(e.target);
+            })
+        })
+    </script>
+</body>
+</html>

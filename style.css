@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{   display: flex;
+    justify-content: flex-end;
+    background: rgb(56, 16, 16);
+}
+nav{
+    display: flex;
+    position: relative;
+    padding: 10px 0;
+    background: rgb(107, 51, 32);
+}
+nav a
+{
+    position: relative;
+    text-decoration: none;
+    padding: 15px 25px;
+    color: aliceblue;
+    font-weight: 900;
+    letter-spacing: 0.1rem;
+}
+#underline
+{
+    position: absolute;
+    border-bottom: 5px solid rgb(158, 117, 28);
+    width: 90px;
+    bottom: 0;
+    height: 100%;
+    background: linear-gradient(0deg,rgb(216, 189, 114),transparent);
+    transition: 0.5s;
+    pointer-events: none;
+    filter: drop-shadow(0 5px 25px rgb(155, 63, 63));
+}
